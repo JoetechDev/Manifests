@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: test
+  namespace: dev
   name: joetechdep
 spec:
   selector:
