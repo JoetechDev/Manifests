@@ -1,8 +1,9 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: joetechapp
   namespace: dev
-  name: joetechdep
 spec:
   selector:
     matchLabels:
@@ -13,11 +14,11 @@ spec:
         app: joetechapp
     spec:
       containers:
-        - name: joetechcon
-          image: jeaggrey/webapp:29
-          # resources:
-          #   limits:
-          #     memory: "128Mi"
-          #     cpu: "500m"
-          ports:
-            - containerPort: 8080
+      - name: joetechapp
+        image: jeaggrey/webapp:29
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 8080

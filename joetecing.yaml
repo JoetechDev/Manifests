@@ -1,20 +1,20 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  namespace: test
-  name: joetechingress
+  namespace: dev
+  name: joetechapp
   labels:
-    name: joetechingress
+    name: joetechapp
 spec:
   ingressClassName: nginx
   rules:
-  - host: josephaggrey.com
+  - host: joe.joetechservices.com
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: joetechsvc
+            name: joetechapp
             port:
               number: 80
