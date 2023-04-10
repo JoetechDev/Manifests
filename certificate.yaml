@@ -1,11 +1,11 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: grafanacert
+  name: www.joetechservices.com
 spec:
-  secretName: grafanacert
+  secretName: www.joetechservices.com
   dnsNames:
-  - grafana.joetechservices.com
+  - wwww.joetechservices.com
   issuerRef:
     name: letsencrypt-production
     kind: ClusterIssuer
