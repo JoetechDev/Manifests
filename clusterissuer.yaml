@@ -10,7 +10,7 @@ spec:
     # To use the production environment, use the following line instead:
     #server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
-      name: letsencrypt-staging
+      name: issuer-letsencrypt-staging
     solvers:
     - http01:
         ingress:
