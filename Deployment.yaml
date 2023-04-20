@@ -15,13 +15,13 @@ spec:
     spec:
       containers:
       - name: joetechapp
-        image: jeaggrey/webapp:30
+        image: jeaggrey/webapp:27
         resources:
           requests:
             memory: "200Mi"
             cpu: "200m"
-          limits:
-            memory: "200Mi"
-            cpu: "200m"
+          # limits:
+          #   memory: "200Mi"
+          #   cpu: "200m"
         ports:
         - containerPort: 8080
